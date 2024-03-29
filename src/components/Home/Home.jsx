@@ -1,7 +1,17 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import './Home.css'
+import "./Home.css";
+import { useNavigate } from "react-router-dom";
+
 function Home() {
+  const navigate = useNavigate(); // Call useNavigate as a function
+
+  const handleContactClick = () => {
+    navigate("/contact");
+  };
+  const handleAboutClick = () => {
+    navigate("/about");
+  };
   return (
     <div>
       <div>
@@ -9,15 +19,19 @@ function Home() {
       </div>
       <div className="herosection">
         <div className="hero-content">
-            <h1>We Build <br /><span>to Grow</span> <br />your idea</h1>
-            <p>We have a industrial ready team to start a work on Project </p>
-            <div className="hero-btn">
-                <button>Contact Us</button>
-                <button>About Our Team</button>
-            </div>
+          <h1>
+            We Build <br />
+            <span>to Grow</span> <br />
+            your idea
+          </h1>
+          <p>We have a industrially ready team to start a work on Project </p>
+          <div className="hero-btn">
+            <button onClick={handleContactClick}>Contact Us</button>
+            <button onClick={handleAboutClick}>About Our Team</button>
           </div>
+        </div>
         <div className="hero-right">
-            <img src="assets/home.png" alt="" />
+          <img src="assets/home.png" alt="" />
         </div>
       </div>
     </div>
