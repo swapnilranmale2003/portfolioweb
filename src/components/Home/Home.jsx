@@ -4,7 +4,7 @@ import "./Home.css";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const navigate = useNavigate(); // Call useNavigate as a function
+  const navigate = useNavigate();
 
   const handleContactClick = () => {
     navigate("/contact");
