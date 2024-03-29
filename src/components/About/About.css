@@ -1,0 +1,41 @@
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 60px); /* Adjusted height calculation */
+    margin: 0 5rem;
+
+}
+.about-left{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+.about-left p{
+    width: 80%; 
+}
+.about-right img{
+    width: 380px;
+    height: 302px;
+    margin-top: 5rem;
+}
+.about-service-box{
+    display: flex;
+    gap: 3rem;
+}
+.about-service-box  .box1{
+    width: 230px;
+    border: 1px solid rgba(0, 0, 0, 0.517);
+    border-radius: 5px;
+    padding: 10px;
+   
+}
+.box1 h3{
+    color: white;
+    font-size: 16px;
+}
+.box1  p{
+    color: white;
+    font-size: 12px;
+}

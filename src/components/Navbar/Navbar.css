@@ -16,8 +16,9 @@
     display: flex;
 }
 
-.menu ul li {
-    list-style: none;
-    padding: 0 8px;
-
+.white-link {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 14px;
 }
