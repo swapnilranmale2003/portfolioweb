@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2B2D42;
+    color: white;
+    height: 60px;
+    padding: 0 12px;
+}
+
+.navbar .logo {
+    font-size: 28px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 0 8px;
+
+}
