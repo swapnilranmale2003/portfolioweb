@@ -1,9 +1,8 @@
 .about-section{
     display: flex;
     justify-content: space-between;
-    height: calc(100vh - 60px); 
     margin: 0 5rem;
-
+    height:100vh;
 }
 .about-left{
     margin-top: 3rem;
@@ -15,10 +14,17 @@
 .about-left p{
     width: 80%; 
 }
-.about-right img{
-    width: 380px;
-    height: 302px;
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 5rem;
+}
+.about-right img{
+    width: 100%;
+    max-width: 980px;
+    height: auto;
 }
 .about-service-box{
     display: flex;
@@ -39,3 +45,34 @@
     color: white;
     font-size: 12px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+    .about-right img{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        
+    }
+    .about-service-box{
+        max-width: 700px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .about-service-box  .box1{
+        width: 300px;
+        border: 1px solid rgba(0, 0, 0, 0.517);
+        border-radius: 5px;
+        padding: 10px;
+        height: auto;
+       
+    }
+}
+
+
